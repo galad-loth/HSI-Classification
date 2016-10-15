@@ -1,6 +1,6 @@
 function dataInfo=HsiDataLoad(data_name)
 if (strcmp(data_name,'PaviaCenter'))
-    spectral_data=load('E:\Data\HyperSpectral\HSI_Data\Pavia.mat');
+    spectral_data=load('E:\Data\HyperSpectral\HSI_Data\Pavia.mat');    
     gt_data=load('E:\Data\HyperSpectral\HSI_Data\Pavia_gt.mat');
     class_dict={'water','tree','meadow','brick','bare soil','asphalt','bitumen','tile','shadow'};
     dataInfo=struct('data_name','PaviaCenter','num_class',9,'class_dict',{class_dict},...
