@@ -17,6 +17,10 @@ disp('Perform dimensional reduction.');
 % [train_feat,pca_eigvec,pca_eigval]=MyPCA(train_feat,1,32);
 % test_feat=MyPCA(test_feat,2,pca_eigvec);
 
+% lda_model=MyLDA(train_feat,1,train_label);
+% [lda_label_train,train_feat]=MyLDA(train_feat,2,lda_model);
+% [lda_label_test,test_feat]=MyLDA(test_feat,2,lda_model);
+
 sigma_rbf=3;
 [train_feat_proj,pca_eigvec,pca_eigval]=KernelPCA(train_feat,1,72,train_feat,'rbf',sigma_rbf);
 test_feat_proj=KernelPCA(test_feat,2,pca_eigvec,train_feat,'rbf',sigma_rbf);
