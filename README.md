@@ -1,3 +1,3 @@
 # HSIClassification
 
-Implememtations of a number of HyperSpectral Image classification approaches. 
+A number of tools for Hyperspectral image classification, including dimensional reduction, over-segmentation,image processing and classifiers(Multinomial Logist Resgression, Sparse Representation based Clasifiers)...
